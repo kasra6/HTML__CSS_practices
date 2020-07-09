@@ -18,7 +18,7 @@
       <h1>Speaker Submission</h1>
       <p><em>You want to speak at our conference? Fill out the form</em></p>
     </header>
-    <form class="speaker-form" action="#" method="post">
+    <form class="speaker-form" action="#" method="get">
       <div class="form-row">
         <label for="full-name">Name:</label>
         <input id="full-name" name="full-name" type="text" placeholder="Kasra" required>
@@ -63,7 +63,17 @@
       </div>
 
       <div class="form-row">
-        <label class="checkbox-label" for="available"></label>
+        <label class="checkbox-label" for="available">
+          <input  id="avilable"
+                  name="available"
+                  type="checkbox"
+                  value="is-available"/>
+          <span>I'm actually available the date of the talk</span>
+        </label>
+      </div>
+
+      <div class="form-row">
+        <button>Submit</button>
       </div>
     </form>
   </div>
