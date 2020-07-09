@@ -96,6 +96,61 @@ strong{
 }
 
 
+.left{
+  text-align: left;
+}
+
+.center{
+  text-align: center;
+}
+
+figcaption{
+  display: none;
+}
+
+.messy{
+  line-height: 1.2em;
+}
+
+.messy h2{
+  line-height: .9em;
+}
+
+.messy:last-of-type{
+  line-height: 1.5em;
+}
+
+.messy:last-of-type h2{
+  margin-bottom: .3em;
+}
+
+.messy button:link,
+.messy button:visited{
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 900px){
+  figure{
+    position: relative;
+  }
+
+  figcaption{
+    display: block;
+
+    font-style: italic;
+    text-align: right;
+    background-color: #fff;
+
+    position: absolute;
+    left: -220px;
+    width: 220px;
+  }
+
+  .justify{
+    text-align: justify;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
   font-weight: normal;
